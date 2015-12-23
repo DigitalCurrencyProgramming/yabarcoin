@@ -1,3 +1,3 @@
-FooCoin (FOO)
+yabarcoin (FOO)
 
 Blah, blah, blah.

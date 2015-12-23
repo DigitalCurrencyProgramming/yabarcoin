@@ -34,9 +34,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("BAR");
-    case mBTC: return QString("mBAR");
-    case uBTC: return QString::fromUtf8("μBAR");
+    case BTC: return QString("YBR");
+    case mBTC: return QString("mYBR");
+    case uBTC: return QString::fromUtf8("μYBR");
     default: return QString("???");
     }
 }
@@ -45,13 +45,13 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("barcoin");
-    case mBTC: return QString("millibarcoin (1 / 1,000)");
-    case uBTC: return QString("microbarcoin (1 / 1,000,000)");
+    case BTC: return QString("yabarcoin");
+    case mBTC: return QString("milliyabarcoin (1 / 1,000)");
+    case uBTC: return QString("microyabarcoin (1 / 1,000,000)");
     default: return QString("???");
     }
 }
-//a single unit (.00000001) of barcoin is called a "wander."
+//a single unit (.00000001) of yabarcoin is called a "wander."
 qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
